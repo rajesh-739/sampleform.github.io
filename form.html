@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Survey related to your courses</p>
+    <form id="survey-form" required>
+      <label id="name-label" for="name">Name: <input type="text" id="name" placeholder="Your name goes here" required>
+      <label id="email-label" for="email">Email: <input type="email" id="email" placeholder="Your mail goes here" required>
+      <label id="number-label" for="age">Age:<input type="number" id="number" min="1" max="120" placeholder="your age goes here">
+      </label>
+    <label for="dropdown">What role describes you currently
+      <select id="dropdown">
+        <option name=""></option>
+        <option name="Student">Student</option>
+        <option name="Working Professional">Working Professional</option>
+        <option name="nottosay">Prefer No to Say</option>
+        <option name="others">Others</option>
+      </select>
+    </label>
+    <label>Would you recommend freecodecamp to your friends </label>
+  <label>
+      <input type="radio" name="recommendation" value="Yes" class="inline"> Yes</label>
+  <label>    <input type="radio" name="recommendation" value="Maybe" class="inline"> Maybe</label>
+<label>  <input type="radio" name="recommendation" value="No"  class="inline"> Not Sure</label>
+<label>What is your favourite courses</label>
+<label for="checkbox"><input type="checkbox" class="inline" value="web-development"> Web Development</label>
+<label for="checkbox"><input type="checkbox" class="inline" value="data-science"> Data Science</label>
+<label for="checkbox"><input type="checkbox" class="inline" value="programming"> Programming</label>
+<label>Any Comments or Suggestion</label>
+<textarea cols="51" rows="6" placeholder="please write here"></textarea>
+<button id="submit" type="submit">Submit</button>
+      </form>
+  </body>
+</html>
